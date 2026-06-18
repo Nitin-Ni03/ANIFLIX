@@ -1,0 +1,611 @@
+/* General Layout */
+.landing-page {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Feature Divider Bars */
+.section-divider {
+  height: 8px;
+  background-color: #232323;
+  width: 100%;
+}
+
+/* Hero Section with Netflix poster background */
+.hero-banner {
+  position: relative;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%),
+                    url('https://assets.nflxext.com/ffe/siteui/vlv3/7ca5b7c7-e3e4-4ad0-87ef-58dbb55a28fc/netflix-logo-v2-3.jpg'); /* Generic poster grid fallback */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.45;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 90%);
+}
+
+/* Navigation */
+.navbar {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.lang-select {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.lang-select:hover {
+  border-color: #ffffff;
+}
+
+.signin-btn {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signin-btn:hover {
+  background-color: #c40811;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  padding: 4rem 1rem;
+  box-sizing: border-box;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+
+.hero-sub1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+}
+
+.hero-sub2 {
+  font-size: 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+/* Email Sign-up Form */
+.email-form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 650px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: rgba(22, 22, 22, 0.7);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.email-input:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.3);
+}
+
+.get-started-btn {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 0 2rem;
+  border-radius: 4px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.get-started-btn:hover {
+  background-color: #c40811;
+}
+
+.get-started-btn:active {
+  transform: scale(0.98);
+}
+
+/* Feature Sections */
+.feature-section {
+  padding: 4.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.feature-container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.feature-section.reverse .feature-container {
+  flex-direction: row-reverse;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+
+.feature-text p {
+  font-size: 1.5rem;
+  color: #e6e6e6;
+  line-height: 1.4;
+}
+
+.feature-media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* TV Feature Overlay Mockup */
+.tv-frame {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 16/9;
+  border: 12px solid #2b2b2b;
+  border-radius: 12px;
+  background-color: #000000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.tv-screen-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Download Offline Feature Mockup */
+.download-mockup {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 9/16;
+  border: 8px solid #2b2b2b;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.mockup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.download-status-card {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #000000;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 5;
+}
+
+.status-poster {
+  width: 40px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.status-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-text h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.downloading-label {
+  font-size: 0.8rem;
+  color: #0071eb;
+  margin: 0;
+  font-weight: 500;
+}
+
+.download-anim {
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230071eb'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2v-2zm0-10h2v8h-2V6z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+/* Everywhere Feature Mockup */
+.everywhere-mockup {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 4/3;
+  border-radius: 8px;
+  border: 4px solid #1c1c1c;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.everywhere-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Kids Feature Mockup */
+.kids-mockup {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, #e50914 0%, #300204 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 45px rgba(229, 9, 20, 0.15);
+}
+
+.kids-gradient-glow {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(229, 9, 20, 0.25) 0%, transparent 60%);
+  filter: blur(20px);
+}
+
+.kids-emoji {
+  font-size: 5rem;
+  z-index: 5;
+  animation: hover-bounce 4s ease-in-out infinite;
+}
+
+@keyframes hover-bounce {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+/* FAQ Accordion Section */
+.faq-section {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-section h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.faq-accordion {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-item {
+  width: 100%;
+  background-color: #2d2d2d;
+  transition: background-color 0.2s ease;
+}
+
+.faq-item:hover {
+  background-color: #414141;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-icon {
+  font-size: 2rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.faq-icon.open {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.faq-answer.visible {
+  max-height: 1000px; /* Arbitrary high value to support animation height expansion */
+  padding: 1.5rem;
+  border-top: 1px solid #000000;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+}
+
+.faq-answer p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #e6e6e6;
+}
+
+.faq-email-cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.faq-email-cta p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer Section */
+.landing-footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 2rem 4rem;
+  color: rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+}
+
+.footer-contact {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+
+.footer-contact a:hover {
+  color: #ffffff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem 2rem;
+}
+
+.footer-links li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer-lang {
+  margin-bottom: 2rem;
+}
+
+.footer-country {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 950px) {
+  .hero-content h1 {
+    font-size: 2.25rem;
+  }
+  
+  .hero-sub1 {
+    font-size: 1.25rem;
+  }
+  
+  .hero-sub2 {
+    font-size: 1rem;
+  }
+
+  .feature-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .feature-section.reverse .feature-container {
+    flex-direction: column;
+  }
+
+  .feature-text h2 {
+    font-size: 2.25rem;
+  }
+
+  .feature-text p {
+    font-size: 1.15rem;
+  }
+
+  .faq-section h2 {
+    font-size: 2.25rem;
+  }
+
+  .faq-question {
+    font-size: 1.15rem;
+  }
+
+  .faq-answer p {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-banner {
+    padding: 0 1rem;
+  }
+
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .brand-logo {
+    height: 36px;
+  }
+
+  .email-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+
+  .get-started-btn {
+    padding: 1rem;
+    font-size: 1.15rem;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
