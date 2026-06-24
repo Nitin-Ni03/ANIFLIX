@@ -1,14 +1,16 @@
 import { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/ANIFLIX-logo.png";
-import animePoster from "../assets/anime_poster.png";
-import onePiece from "../assets/OnePiece.jpg";
-import naruto from "../assets/Naruto.jpg";
-import demonSlayer from "../assets/Demon-Slayer.jpg";
-import bleach from "../assets/Bleach.jpg";
-import jjk from "../assets/jjk.jpg";
-import hunter from "../assets/hunterxhunter.webp";
-import dana from "../assets/download.webp";
+import img1 from "../assets/OnePiece.jpg";
+import img2 from "../assets/Naruto.jpg";
+import img3 from "../assets/Demon-Slayer.jpg";
+import img4 from "../assets/Bleach.jpg";
+import img5 from "../assets/jjk.jpg";
+import img6 from "../assets/hunterxhunter.webp";
+import img7 from "../assets/download.webp";
+import img8 from "../assets/aot.jpg"
+import img9 from "../assets/Dragon-Ball.jpg"
+import img10 from "../assets/my-hero-academia.webp"
 
 import "./LandingPage.css";
 
@@ -150,16 +152,16 @@ function LandingPage() {
         <button className="carousel-btn carousel-btn-left" onClick={() => scrollCarousel("left")}>❮</button>
         <div className="carousel-container" ref={carouselRef}>
           <div className="carousel-track">
-            <div className="card"><img src={onePiece} alt="anime poster" /></div>
-            <div className="card"><img src={naruto} alt="anime poster" /></div>
-            <div className="card"><img src={demonSlayer} alt="anime poster" /></div>
-            <div className="card"><img src={bleach} alt="anime poster" /></div>
-            <div className="card"><img src={jjk} alt="anime poster" /></div>
-            <div className="card"><img src={hunter} alt="anime poster" /></div>
-            <div className="card"><img src={dana} alt="anime poster" /></div>
-            <div className="card"><img src={animePoster} alt="anime poster" /></div>
-            <div className="card"><img src={animePoster} alt="anime poster" /></div>
-            <div className="card"><img src={animePoster} alt="anime poster" /></div>
+            <div className="card"><img src={img1} alt="anime poster" /></div>
+            <div className="card"><img src={img2} alt="anime poster" /></div>
+            <div className="card"><img src={img3} alt="anime poster" /></div>
+            <div className="card"><img src={img4} alt="anime poster" /></div>
+            <div className="card"><img src={img5} alt="anime poster" /></div>
+            <div className="card"><img src={img6} alt="anime poster" /></div>
+            <div className="card"><img src={img7} alt="anime poster" /></div>
+            <div className="card"><img src={img8} alt="anime poster" /></div>
+            <div className="card"><img src={img9} alt="anime poster" /></div>
+            <div className="card"><img src={img10} alt="anime poster" /></div>
           </div>
         </div>
         <button className="carousel-btn carousel-btn-right" onClick={() => scrollCarousel("right")}>❯</button>
