@@ -1,14 +1,12 @@
-import { Routes, Route } from 'react-router-dom';
-import LandingPage from "./LandingPage/LandingPage";
-import Login from "./login/Login";
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './routes/AppRoutes';
 
-function App(){
+
+function App (){
     return(
-        <Routes>
-            <Route index element={<LandingPage />} />
-            <Route path="login" element={<Login />} />
-            {/* <Route path="Heropage" element={<HeroPage />} /> */}
-        </Routes>
+        <BrowserRouter>
+            <AppRoutes />
+        </BrowserRouter>
     )
 }
 export default App;
