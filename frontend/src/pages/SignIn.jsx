@@ -51,7 +51,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="bg-slate-950 text-white min-h-screen pt-28 pb-16 font-sans flex items-center justify-center">
+    <div className="bg-slate-950 text-white min-h-screen pt-16 pb-16 font-sans flex items-center justify-center">
       <div className="w-full max-w-md px-4 sm:px-6">
         <div className="bg-slate-900/60 backdrop-blur-md p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl space-y-6">
           <div className="text-center space-y-2">
