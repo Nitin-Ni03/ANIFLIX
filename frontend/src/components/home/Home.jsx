@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import bannerImg from "../assets/Aniflix-banner.jpeg";
+import bannerImg from "../../assets/Aniflix-banner.jpeg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,18 +15,18 @@ const Home = () => {
   return (
     <div className="bg-slate-950 text-white min-h-screen font-sans">
       <div
-        className="relative h-[90vh] bg-cover item-center flex justify-center pt-16"
+        className="relative h-[90vh] bg-cover items-center flex justify-center pt-16"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(2, 6, 23, 0.4) 0%, rgba(2, 6, 23, 0.9) 100%), url(${bannerImg})`,
         }}
       >
         <div className="absolute inset-0 bg-slate-950/40"></div>
-        <div className="relative max-w-4x1 mx-auto text-center px-4 sm:px-6 z-10 space-y-6">
+        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 z-10 space-y-6">
           <div className="inline-block bg-orange-600/20 text-orange-400 border border-orange-500/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-2">
             Now Streaming Worldwide
           </div>
-          <h1 className="text-4x1 sm:text-6x1 font-extrabold tracking-tight leading-tight">
-            Unlimited Anime, (" ")
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+            Unlimited Anime,{" "}
             <span className="text-orange-500">ZERO Limits</span>
           </h1>
           <p className="text-lg sm:text-2xl text-slate-200 font-medium max-w-2xl mx-auto">

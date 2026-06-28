@@ -56,7 +56,8 @@ const SignIn = () => {
         <div className="bg-slate-900/60 backdrop-blur-md p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl space-y-6">
           <div className="text-center space-y-2">
             <h2 className="text-3xl font-extrabold tracking-tight">
-              {isSignUp ? 'Create ' : 'Sign '}In <span className="text-orange-500">ANIFLIX</span>
+              {isSignUp ? "Sign Up to" : "Sign In to"}{" "}
+              <span className="text-orange-500">ANIFLIX</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-400">
               {isSignUp ? 'Register a new account' : 'Access your streaming catalog'}

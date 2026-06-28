@@ -12,7 +12,7 @@ export const animeList = [
   {
     id: 1,
     title: "one Piece",
-    imgage: onePiece,
+    image: onePiece,
     rating: " 9.8",
     year: "1999",
     episodes: "1110+",
@@ -20,7 +20,7 @@ export const animeList = [
   {
     id: 2,
     title: "Naruto Shippuden",
-    imgage: naruto,
+    image: naruto,
     rating: " 9.6",
     year: "2007",
     episodes: "500",
