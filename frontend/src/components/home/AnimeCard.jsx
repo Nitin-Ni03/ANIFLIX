@@ -28,14 +28,14 @@ const Animecard = () => {
             key={anime.id}
             className="group relative bg-slate-900 rounded-xl overflow-hidden shadow-md border border-slate-800/60 hover:border-orange-500/90 transition-all duration-400 hover:-translate-y-1.5 cursor-pointer"
           >
-            <div className="aspect-[3/4] overflow-hidden">
+            <div className="aspect-3/4 overflow-hidden">
               <img
                 src={anime.image}
                 alt={anime.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+            <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
               <h3 className="font-bold text-xs sm:text-sm line-clamp-1 text-white">
                 {anime.title}
               </h3>

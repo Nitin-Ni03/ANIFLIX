@@ -155,7 +155,7 @@ const SignIn = () => {
                 {isSignUp ? 'Sign In now' : 'Sign Up now'}
               </button>
             </p>
-            <p className="text-[10px] text-slate-500 leading-relaxed max-w-[280px] mx-auto">
+            <p className="text-[10px] text-slate-500 leading-relaxed max-w-280px mx-auto">
               This page is protected by Google reCAPTCHA to ensure you're not a bot.
             </p>
           </div>

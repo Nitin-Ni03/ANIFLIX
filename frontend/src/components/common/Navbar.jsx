@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             {/* Logo */}
-            <Link to="/" className="flex-shrink-0 flex items-center">
+            <Link to="/" className="shrink-0 flex items-center">
               <span className="text-xl font-bold tracking-tight">
                 ANI <span className="text-orange-500">FLIX</span>
               </span>
