@@ -9,8 +9,8 @@ const About = () => {
           </p>
         </div>
         
-        <div className="relative rounded-2xl overflow-hidden aspect-[21/9] bg-slate-900 border border-slate-800 flex items-center justify-center p-8">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/30 to-slate-950/90 z-0"></div>
+        <div className="relative rounded-2xl overflow-hidden aspect-21/9 bg-slate-900 border border-slate-800 flex items-center justify-center p-8">
+          <div className="absolute inset-0 bg-linear-to-r from-orange-600/30 to-slate-950/90 z-0"></div>
           <div className="relative z-10 text-center max-w-lg space-y-3">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">The Ultimate Anime Experience</h3>
             <p className="text-slate-300 text-xs sm:text-sm">Streaming premium anime series, manga adaptations, and exclusive movies in stunning high definition.</p>
